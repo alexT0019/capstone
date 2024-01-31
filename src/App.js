@@ -1,24 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import { Link, Route, Routes } from "react-router-dom";
+import LandingPage from "./Pages/LandingPage";
+import UserRegistration from "./Pages/UserRegistration";
+import UserProfile from "./Pages/UserProfile";
+import AugmentedReality from "./Pages/AugmentedReality";
+import ProgressTracking from "./Pages/ProgressTracking";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+    {/* navbar */}
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="signup">Get Started</Link>
+      <Link to="/profile">Profile</Link>
+      <Link to="/arlearning">AR Learning</Link>
+      <Link to="/progress">Progress Tracking</Link>
+    </nav>
+    {/* routes */}
+      <Routes>
+        <Route path="/" element={<LandingPage />}></Route>
+        <Route path="/signup" element={<UserRegistration />}></Route>
+        <Route path="/profile" element={<UserProfile />}></Route>
+        <Route path="/arlearning" element={<AugmentedReality />}></Route>
+        <Route path="/progress" element={<ProgressTracking />}></Route>
+      </Routes>
+   </div>
+
   );
 }
 
