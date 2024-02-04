@@ -43,6 +43,11 @@ function UserRegistration() {
           <img className="ar-project-1" src={picture} alt="schoolbag" />
         </div>
       </div>
+        <div>
+            <nav>
+                
+            </nav>
+        </div>
     );
 }
 export default UserRegistration;
