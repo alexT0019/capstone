@@ -6,7 +6,7 @@
 
 .navStyle {
   background: #525fe1;
-  padding: 30px;
+  padding: 50px;
   padding-right: 50px;
   text-align: right;
 }
@@ -35,7 +35,7 @@
 
 .footerStyle {
   background: #525fe1;
-  padding: 20px;
+  padding: 30px;
   padding-left: 50px;
   display: flex;
 }

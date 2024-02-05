@@ -1,274 +1,101 @@
-.user-registration,
-.user-registration * {
-  box-sizing: border-box;
-}
-.user-registration {
+.container {
   background: #525fe1;
-  border-style: solid;
-  border-color: #000000;
-  border-width: 1px;
-  height: 1024px;
-  position: relative;
-  overflow: hidden;
+  width: 100vw;
 }
-.rectangle-27 {
-  background: #ffffff;
-  border-radius: 50px;
-  width: 664px;
-  height: 776px;
-  position: absolute;
-  left: 82px;
-  top: 118px;
+
+/*Sign Up Form*/
+
+.formContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
 }
-.group-1 {
-  position: absolute;
-  inset: 0;
-}
-.rectangle-12 {
-  background: #f08d46;
-  border-radius: 40px;
-  width: 337px;
-  height: 79px;
-  position: absolute;
-  left: 245px;
-  top: 730px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.email {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 146px;
-  top: 582px;
-  width: 146px;
-  height: 36px;
-}
-.rectangle-6 {
-  background: #c5c9f5;
-  border-radius: 20px;
-  width: 536px;
-  height: 48px;
-  position: absolute;
-  left: 146px;
-  top: 624px;
-}
-.password {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 146px;
-  top: 470px;
-  width: 146px;
-  height: 36px;
-}
-.rectangle-8 {
-  background: #c5c9f5;
-  border-radius: 20px;
-  width: 536px;
-  height: 48px;
-  position: absolute;
-  left: 146px;
-  top: 506px;
-}
-.username {
-  color: #000000;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 146px;
-  top: 349px;
-  width: 146px;
-  height: 36px;
-}
-.rectangle-7 {
-  background: #c5c9f5;
-  border-radius: 20px;
-  width: 536px;
-  height: 48px;
-  position: absolute;
-  left: 146px;
-  top: 385px;
-}
-.sign-up {
-  color: #436ace;
-  text-align: left;
-  font-family: "Poppins-Bold", sans-serif;
+
+.title {
+  display: flex;
+  justify-content: center;
+  color: #436ACE;
   font-size: 64px;
+  font-family: "Poppins-Bold", sans-serif;
   font-weight: 700;
-  position: absolute;
-  left: 299px;
-  top: 181px;
 }
-.already-have-an-account-sign-in-now {
-  color: #436ace;
-  text-align: left;
+
+.directToSignIn {
+  display: flex;
+  justify-content: center;
+  color: #436ACE;
   font-family: "Inter-Regular", sans-serif;
   font-size: 16px;
   font-weight: 400;
-  position: absolute;
-  left: 269px;
-  top: 272px;
-  width: 290px;
-  height: 18px;
+  padding-top: 5px;
 }
-.already-have-an-account-sign-in-now-span {
-  color: #436ace;
+
+.directToSignInSpan {
+  color: #436ACE;
   font-family: "Inter-Regular", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
-.already-have-an-account-sign-in-now-span2 {
-  color: #436ace;
+
+.directToSignInSpan2 {
+  color: #436ACE;
   font-family: "Inter-Regular", sans-serif;
   font-size: 16px;
   font-weight: 400;
   text-decoration: underline;
+  padding-left: 5px;
 }
+
+form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.text {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+input {
+  border-radius: 50px;
+  width: 90%;
+  height: 40px;
+  background: #c5c9f5;
+  padding-left: 20px;
+  font-size: 25px;
+  border: none;
+}
+
+.submitContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .submit {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Poppins-Bold", sans-serif;
+  color: #FFFFFF;
   font-size: 32px;
   font-weight: 700;
-  position: absolute;
-  left: 351px;
-  top: 750px;
-  width: 126px;
-  height: 39px;
-}
-.get-started {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  position: absolute;
-  left: 180px;
-  top: 965px;
-}
-.progress-tracking {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  position: absolute;
-  left: 180px;
-  top: 983px;
-}
-.home {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 57px;
-  top: 936px;
-  width: 62px;
-  height: 23px;
-}
-.profile {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 180px;
-  top: 936px;
-  width: 68px;
-  height: 23px;
-}
-.ar-learning {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  position: absolute;
-  left: 309px;
-  top: 936px;
-  width: 118px;
-  height: 23px;
-}
-.copyright-2024-all-rights-reserved {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Inter-Regular", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  position: absolute;
-  left: 1135px;
-  top: 962px;
-  width: 275px;
-  height: 19px;
-}
-.rectangle-13 {
-  background: #f08d46;
-  border-radius: 40px;
-  width: 252px;
-  height: 59px;
-  position: absolute;
-  left: 1158px;
-  top: 30px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.get-started2 {
-  color: #ffffff;
-  text-align: left;
   font-family: "Poppins-Bold", sans-serif;
-  font-size: 32px;
-  font-weight: 700;
-  position: absolute;
-  left: 1189px;
-  top: 35px;
-  width: 218px;
-  height: 38px;
+  background: #f08d46 !important;
+  border-radius: 40px !important;
+  height: 80px;
+  width: 300px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 80px;
 }
-.home2 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  position: absolute;
-  left: 467px;
-  top: 36px;
+
+/*Image*/
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.profile2 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  position: absolute;
-  left: 672px;
-  top: 36px;
-}
-.ar-learning2 {
-  color: #ffffff;
-  text-align: left;
-  font-family: "Poppins-Regular", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  position: absolute;
-  left: 881px;
-  top: 36px;
-}
-.ar-project-1 {
-  width: 596px;
-  height: 448px;
-  position: absolute;
-  left: 798px;
-  top: 302px;
-  object-fit: cover;
+
+.image {
+  width: 100%;
 }

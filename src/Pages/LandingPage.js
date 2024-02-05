@@ -43,7 +43,7 @@ function LandingPage() {
             </span>{" "}
         </div>
         <div className="learning-cantonese">Learning Cantonese </div>
-        <img className="trading-now-easier-1" src="trading-now-easier-10.png" />
+        <img className="trading-now-easier-1" src="trading-now-easier-10.png" alt="school" />
         </div>
     </div>
     );
