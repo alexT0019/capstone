@@ -5,18 +5,13 @@ function LandingPage() {
         <div>
             <div className="index">
         <div className="rectangle-4"></div>
-        <div className="rectangle-11"></div>
         <div className="rectangle-12"></div>
         <div className="sign-up-here">SIGN UP HERE </div>
         <div className="get-started">Get Started </div>
         <div className="home">Home </div>
         <div className="profile">Profile </div>
         <div className="ar-learning">AR Learning </div>
-        <div className="get-started2">Get Started </div>
         <div className="progress-tracking">Progress Tracking </div>
-        <div className="home2">Home </div>
-        <div className="profile2">Profile </div>
-        <div className="ar-learning2">AR Learning </div>
         <div className="copyright-2024-all-rights-reserved">
             Copyright 2024©All rights reserved{" "}
         </div>

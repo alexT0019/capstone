@@ -5,7 +5,8 @@ import UserRegistration from "./Pages/UserRegistration";
 import UserProfile from "./Pages/UserProfile";
 import AugmentedReality from "./Pages/AugmentedReality";
 import ProgressTracking from "./Pages/ProgressTracking";
-import { Button } from 'react-bootstrap';
+import Button from '@mui/material/Button';
+import Grid from '@mui/material/Grid';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Link className="linkStyle" to="/profile">Profile</Link>
       <Link className="linkStyle" to="/arlearning">AR Learning</Link>
       <Link className="linkStyle" to="/progress">Progress Tracking</Link>
-      <Button className="linkButtonStyle">
+      <Button variant="contained" className="linkButtonStyle">
         <Link className="linkStyle" to="/signup">Get Started</Link>
       </Button>
     </nav>
@@ -30,16 +31,22 @@ function App() {
       </Routes>
     {/* footer */}
     <footer className="footerStyle">
-      <Link className="footerLinkStyle" to="/">Home</Link>
-      <span className="footerContainer">
-        <Link className="footerLinkStyle" to="/profile">Profile</Link>
-        <span className="footerContainer2">
-          <Link className="footerLinkStyle2" to="/signup">Get Started</Link>
-          <Link className="footerLinkStyle2" to="/progress">Progress Tracking</Link>
-        </span>
-      </span>
-      <Link className="footerLinkStyle" to="/arlearning">AR Learning</Link>
-      <span className="footerCopyright">Copyright 2024©All rights reserved</span>
+      <Grid container spacing={2}>
+        <Grid item xs={1}>
+          <Link className="footerLinkStyle" to="/">Home</Link>
+        </Grid>
+        <Grid item xs={1}>
+            <Link className="footerLinkStyle" to="/profile">Profile</Link>
+            <Link className="footerLinkStyle2" to="/signup">Get Started</Link>
+            <Link className="footerLinkStyle2" to="/progress">Progress Tracking</Link>
+        </Grid>
+        <Grid item xs={1}>
+          <Link className="footerLinkStyle" to="/arlearning">AR Learning</Link>
+        </Grid>
+        <Grid item xs={9} className="footerCopyright">
+          <span>Copyright 2024©All rights reserved</span>
+        </Grid>
+      </Grid>
     </footer>
    </div>
 
