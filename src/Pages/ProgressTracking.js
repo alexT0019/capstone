@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react';
 
 function ProgressTracking() {
   const [isClient, setIsClient] = useState(false);
+  const [showScoreReward, setShowScoreReward] = useState(false);
 
   useEffect(() => {
     setIsClient(true);
   }, []);
 
   const handleScoreRewardClick = () => {
-    window.location.href = 'capstone/src/Pages/Images/SR_original.png'; 
+    setShowScoreReward(!showScoreReward);
   };
 
   return (
@@ -32,7 +33,7 @@ function ProgressTracking() {
         <tr>
           <td>Cat</td>
           <td>貓</td>
-          <td></td>
+          <td>✯</td>
         </tr>
       </table>
       <p></p>
@@ -47,7 +48,7 @@ function ProgressTracking() {
         <tr>
           <td>Apple</td>
           <td>蘋果</td>
-          <td></td>
+          <td>✯</td>
         </tr>
         <tr>
           <td>Kiwi</td>
@@ -58,11 +59,16 @@ function ProgressTracking() {
       <p></p>
 
       <button className="new-button" onClick={handleScoreRewardClick}>
-        Score & Reward
+        {showScoreReward ? 'Hide Score & Reward' : 'Show Score & Reward'}
       </button>
+      <p></p>
+      {showScoreReward && (
+        <div style={{ display: "flex", justifyContent: "left" }}>
+          <img src="/img/SR_final.png" style={{ width: "200px", margin: "0 5em" }} />
+        </div>
+      )}
     </div>
   );
-
 }
 
 export default ProgressTracking;
