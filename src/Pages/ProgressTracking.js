@@ -7,6 +7,10 @@ function ProgressTracking() {
     setIsClient(true);
   }, []);
 
+  const handleScoreRewardClick = () => {
+    window.location.href = 'capstone/src/Pages/Images/SR_original.png'; 
+  };
+
   return (
     <div>
       <h1>Progress Tracking</h1>
@@ -18,6 +22,7 @@ function ProgressTracking() {
         <tr>
           <td>Tiger</td>
           <td>老虎</td>
+          <td></td>
         </tr>
         <tr>
           <td>Dog</td>
@@ -42,6 +47,7 @@ function ProgressTracking() {
         <tr>
           <td>Apple</td>
           <td>蘋果</td>
+          <td></td>
         </tr>
         <tr>
           <td>Kiwi</td>
@@ -49,8 +55,14 @@ function ProgressTracking() {
           <td></td>
         </tr>
       </table>
+      <p></p>
+
+      <button className="new-button" onClick={handleScoreRewardClick}>
+        Score & Reward
+      </button>
     </div>
   );
+
 }
 
 export default ProgressTracking;
