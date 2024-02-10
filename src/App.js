@@ -1,26 +1,23 @@
 import './App.css';
-import { Link, Route, Routes } from "react-router-dom";
+import { Link, Route, Routes, useLocation } from "react-router-dom";
 import LandingPage from "./Pages/LandingPage";
 import UserRegistration from "./Pages/UserRegistration";
 import UserProfile from "./Pages/UserProfile";
 import AugmentedReality from "./Pages/AugmentedReality";
 import ProgressTracking from "./Pages/ProgressTracking";
-import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
+import DefaultNavbar from './Components/DefaultNavbar';
+import AuthNavbar from './Components/AuthNavbar';
 
 function App() {
+  const location = useLocation();
+  const isDefaultNavbar = location.pathname === '/' || location.pathname === '/signup';
+
   return (
    <div>
     {/* navbar */}
-    <nav className="navStyle">
-      <Link className="linkStyle" to="/">Home</Link>
-      <Link className="linkStyle" to="/profile">Profile</Link>
-      <Link className="linkStyle" to="/arlearning">AR Learning</Link>
-      <Link className="linkStyle" to="/progress">Progress Tracking</Link>
-      <Button variant="contained" className="linkButtonStyle">
-        <Link className="linkStyle" to="/signup">Get Started</Link>
-      </Button>
-    </nav>
+    {/* Showing 'GET STARTED' for landing and signup, 'LOGOUT' for other pages */}
+    {isDefaultNavbar ? <DefaultNavbar /> : <AuthNavbar />}
     {/* routes */}
       <Routes>
         <Route path="/" element={<LandingPage />}></Route>
