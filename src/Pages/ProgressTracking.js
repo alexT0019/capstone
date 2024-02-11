@@ -1,3 +1,5 @@
+import './ProgressTracking.css';
+
 function ProgressTracking() {
     return;
 }
