@@ -25,6 +25,7 @@ function App() {
         <Route path="/profile" element={<UserProfile />}></Route>
         <Route path="/arlearning" element={<AugmentedReality />}></Route>
         <Route path="/progress" element={<ProgressTracking />}></Route>
+        
       </Routes>
    </div>
 
