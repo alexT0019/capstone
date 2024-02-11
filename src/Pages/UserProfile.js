@@ -1,6 +1,9 @@
 function UserProfile() {
     return(
-        <div>
+        <div class="flex-container">
+            <div class="profile-side">
+                
+            </div>
             
         </div>
     );
