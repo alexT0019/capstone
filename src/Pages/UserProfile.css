@@ -1,3 +1,11 @@
+.avator {
+    background-color: aliceblue;
+}
+
+#profilePic {
+    border-radius: 50%;
+}
+
 .flex-container {
     display: flex;
     flex-direction: row;

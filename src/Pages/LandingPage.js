@@ -12,7 +12,7 @@ function LandingPage() {
         
         <div class="flex-container">
         <div class="flex-item-left">
-          <img style={{ width: 822, height: 514, alignSelf: 'center'}}
+          <img style={{ width: 822, height: 514}}
             src={landingPic}
             alt="SchoolbagRocketGlobe"
             />
