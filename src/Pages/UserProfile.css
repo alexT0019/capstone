@@ -1,0 +1,46 @@
+.avator {
+    background-color: aliceblue;
+}
+
+#profilePic {
+    border-radius: 50%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    background-color: #525FE1;
+    color:#FFFFFF;
+  }
+  
+  .flex-item-left {
+    background-color: #525FE1;
+    padding: 5px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: left; 
+  }
+  
+  .flex-item-right {
+    background-color: #525FE1;
+    padding: 10px;
+    width: 50%;
+    display: right;
+  }
+  .flex-item-right h2 {
+    font-size: 30px;
+  }
+
+  .flex-item-right p {
+    font-size: 25px;
+  }
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+}
+

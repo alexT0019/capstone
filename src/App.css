@@ -2,37 +2,125 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*nav bar*/
+
+.navStyle {
+  background: #525fe1;
+  padding: 50px;
+  padding-right: 50px;
+  text-align: right;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.linkStyle {
+  margin: 50px;
+  font-family: "Poppins-Bold", sans-serif;
+  font-size: 32px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.linkButtonStyle {
+  background: #f08d46 !important;
+  border-radius: 40px !important;
+  height: 60px;
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.25);
+}
+
+.linkButtonStyle .linkStyle {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 800px) {
+  .navStyle {
+    background: #525fe1;
+    text-align: center;
+    padding: 0px;
+    padding-right: 0px;
+  }
+
+  .linkButtonStyle {
+    height: 50px;
+    width: 240px;
+    margin: 10px !important;
+  }
+
+  .linkButtonStyle .linkStyle {
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .hamburgerToggler {
+    background: #f08d46;
+    display: flex;
+    justify-content: center;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*footer*/
+
+.footerStyle {
+  background: #525fe1;
+  padding: 30px;
+  padding-left: 50px;
+  display: flex;
+}
+
+.footerLinkStyle {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.footerLinkStyle2 {
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
+  margin-top: 5px;
+}
+
+.footerCopyright {
+  display: flex;
+  color: #FFFFFF;
+  position: relative;
+  justify-content: flex-end;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-right: 20px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 800px) {
+  .footerStyle {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/*Hamburger toggler*/
+@media screen and (max-width: 800px) {
+  .hiddenMenu {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background: #f08d46;
+    font-size: 20px;
+    z-index: 2;
+    width: 100%;
+  }
+  
+  .hiddenMenu .linkStyle {
+    padding: 15px;
+    margin: 0;
+    font-family: "Poppins-Bold", sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 400;
+    border: 1px solid #F9C097;
   }
 }
