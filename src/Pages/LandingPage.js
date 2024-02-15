@@ -10,14 +10,14 @@ function LandingPage() {
         <div className="rectangle-4"></div>
         <div className="rectangle-12"></div>
         
-        <div class="flex-container">
-        <div class="flex-item-left">
+        <div className="flex-container">
+        <div className="flex-item-left">
           <img style={{ width: 822, height: 514}}
             src={landingPic}
             alt="SchoolbagRocketGlobe"
             />
         </div>
-          <div class="flex-item-right">
+          <div className="flex-item-right">
             <h1>LEARNING CANTONESE</h1>
             <h2>the HARDEST Language to learn?</h2>
             <p>Don't worry!</p>

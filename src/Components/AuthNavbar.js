@@ -34,7 +34,7 @@ const toggleMenu = () => {
 
 return (
     <div>
-        {IsMobileHandler}
+        {/* {IsMobileHandler} */}
         {isMobile ? 
         (<nav className="navStyle">
             <Grid container spacing={0}>
