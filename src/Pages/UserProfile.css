@@ -27,7 +27,7 @@
     justify-content: center;
     align-items: center;
     display: flex; 
-    border-radius: 10%;
+    border-radius: 5%;
   }
 
   .left h3{
@@ -35,8 +35,8 @@
     font-weight: bolder;
   }
 
-  .left p {
-
+  .link {
+    color:#F08D46;
   }
   
   .right {

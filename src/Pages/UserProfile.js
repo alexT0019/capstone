@@ -15,8 +15,8 @@ function UserProfile() {
                 </div>
                 <h3>Janie Lau</h3>
                 <p>Grade 5</p>
-                <h3>Learning Record</h3>
-                <h3>User Setting</h3>
+                <p class="link">Learning Record</p>
+                <p class="link">User Setting</p>
 
             </div>
                 <div class="right">
