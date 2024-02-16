@@ -20,8 +20,13 @@ function UserProfile() {
 
             </div>
                 <div class="right">
-                    
-
+                    <span>User Setting</span>
+                    <h3>Personal Setting</h3>
+                    <p>Name</p>
+                    <p>Age</p>
+                    <p>Grade</p>
+                    <p>Interested Topic</p>
+                    <p>Email</p>
                 </div>
 
         </div>
