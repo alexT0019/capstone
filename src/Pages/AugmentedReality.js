@@ -9,6 +9,12 @@ import * as cocoSsd from "@tensorflow-models/coco-ssd"
 
 // const minMax = (n, min, max) => n < min ? min : n > max ? max : n
 
+/*
+    git add .
+    git commit -m "your commit message goes here"
+    git push origin branch-name-goes-here
+*/
+
 
 const reader = new FileReader()
 let image = document.createElement('img')
@@ -17,8 +23,8 @@ const synth = window.speechSynthesis
 
 function AugmentedReality() {
     const DEV = false
-    const testPrediction = {english: "test", cantonese: "test", bbox: {}}
-    const testImg = "https://picsum.photos/800/800"
+    const testPrediction = {english: "NA", cantonese: "NA", bbox: {}}
+    const testImg = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWxkyWR4M63gwZ_96nrGyBZ1_ywlk_o-xTbL5ZfjpYjg&s"
     const [prediction, $prediction] = useState(DEV ? testPrediction : null)
     const [img, $img] = useState(DEV ? testImg : null)
     const [loading, $loading] = useState(false)
@@ -49,7 +55,6 @@ function AugmentedReality() {
           $img(e.target.result)
       
           // Load the model.
-          // something is causing a memory leak, I think it's this. I think this needs to be loaded once instead of every time predict is called.
           $loading("Loading tensorflow.")
           const model = await cocoSsd.load()
   
@@ -92,9 +97,9 @@ function AugmentedReality() {
   
       return (
           <>
-              <div>
+              <div className='input'>
                   <input type="file" accept="image/*" ref={input} />
-                  <button onClick={handlePredict}>predict</button>
+                  <button onClick={handlePredict}>PREDICT</button>
                   <br />
                   <div id="prediction-container">
                       {loading && (
@@ -128,7 +133,9 @@ function AugmentedReality() {
                           </div>
                       ):!loading&&(
                           <>
+                              <img src={testImg} />
                               Upload an image to see a translation!
+                        
                           </>
                       )}
                   </div>
