@@ -134,7 +134,8 @@ function AugmentedReality() {
                       ):!loading&&(
                           <>
                               <img src={testImg} />
-                              Upload an image to see a translation!
+                              <p> Upload an image to see a translation!
+                                </p>
                         
                           </>
                       )}
